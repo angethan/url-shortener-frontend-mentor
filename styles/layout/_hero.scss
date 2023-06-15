@@ -1,0 +1,26 @@
+@use "../general/variables";
+
+.hero {
+  padding: 150px 0;
+
+  .hero-container {
+    @include variables.grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+
+    .hero__text {
+      @include variables.flex-column-center;
+      gap: 40px;
+    }
+
+    .hero__image {
+      img {
+        width: 100%;
+        display: block;
+        position: relative;
+        inset: 0 200px;
+        scale: 1.3;
+      }
+    }
+  }
+}

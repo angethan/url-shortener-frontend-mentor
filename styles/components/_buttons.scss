@@ -1,0 +1,62 @@
+@use "../general/variables";
+
+@mixin primary-button {
+  background-color: variables.$cyan;
+  padding: 15px 25px;
+  color: variables.$white;
+  cursor: pointer;
+  border-radius: 30px;
+  display: block;
+  width: max-content;
+}
+
+@mixin hover-primary-button {
+  background-color: lighten(variables.$cyan, 15%);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.btn,
+.primary-button {
+  @include primary-button;
+
+  &:hover {
+    @include hover-primary-button;
+  }
+}
+
+.form-button {
+  @include primary-button;
+  border-radius: 10px;
+
+  &:hover {
+    @include hover-primary-button;
+  }
+}
+
+.short-url-copy {
+  @include primary-button;
+  border-radius: 10px;
+  padding: 10px 15px;
+
+  &:hover {
+    @include hover-primary-button;
+  }
+}
+
+.coppied-button {
+  @include primary-button;
+  background-color: variables.$veryDarkViolet;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.mobile-button {
+  @include primary-button;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+
+  &:hover {
+    @include hover-primary-button;
+  }
+}

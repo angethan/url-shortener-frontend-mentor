@@ -1,0 +1,16 @@
+//GENERAL
+@import "./general/variables";
+@import "./general/global";
+
+//COMPONENTS
+@import "./components/buttons";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/form";
+@import "./layout/url";
+@import "./layout/statistics";
+@import "./layout/prefooter";
+@import "./layout/footer";
+@import "./layout/breakpoints";

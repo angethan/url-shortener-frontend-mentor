@@ -1,0 +1,88 @@
+@use "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+img,
+svg,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  outline: none;
+}
+
+body {
+  font-family: variables.$font;
+  font-weight: variables.$fontMedium;
+  color: variables.$grayishViolet;
+  background-color: lighten(variables.$gray, 17%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: variables.$veryDarkBlue;
+  font-weight: variables.$fontBold;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: variables.$h1;
+}
+
+h2 {
+  font-size: variables.$h2;
+}
+
+h3 {
+  font-size: variables.$h3;
+}
+
+h4 {
+  font-size: variables.$h4;
+}
+
+h5 {
+  font-size: variables.$h5;
+}
+
+h6 {
+  font-size: variables.$h6;
+}
+
+.text-center {
+  text-align: variables.$textCenter;
+}
+
+section {
+  width: 100%;
+}
+
+nav,
+.mobile-dropdown,
+.container {
+  width: variables.$containerXXL;
+  margin: 0 auto;
+}

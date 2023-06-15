@@ -1,0 +1,21 @@
+@use "../general/variables";
+
+.prefooter {
+  background: url(../../images/bg-boost-desktop.svg),
+    lighten(variables.$veryDarkViolet, 20%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .prefooter-container {
+    padding: 100px 0;
+    @include variables.flex-column;
+    align-items: center;
+    gap: 30px;
+
+    h2 {
+      color: variables.$white;
+      text-align: center;
+    }
+  }
+}

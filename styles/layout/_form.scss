@@ -1,0 +1,38 @@
+@use "../general/variables";
+
+.form-container {
+  padding: 40px;
+  border-radius: 10px;
+  background: url("../../images/bg-shorten-desktop.svg"),
+    lighten(variables.$veryDarkBlue, 5%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include variables.flex-row;
+  align-items: flex-start;
+  gap: 20px;
+
+  .input-col {
+    width: 80%;
+
+    input {
+      border-radius: 10px;
+      padding: 15px 25px;
+      color: variables.$veryDarkViolet;
+      width: 100%;
+
+      &::placeholder {
+        color: variables.$veryDarkBlue;
+      }
+    }
+
+    small {
+      display: none;
+      color: variables.$red;
+    }
+  }
+
+  button {
+    width: 20%;
+  }
+}

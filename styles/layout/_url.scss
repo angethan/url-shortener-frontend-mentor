@@ -1,0 +1,33 @@
+@use "../general/variables";
+
+.url-container {
+  padding: 20px 0;
+  @include variables.flex-column;
+  gap: 20px;
+
+  .url-card {
+    @include variables.flex-row-between;
+    align-items: center;
+    padding: 20px;
+    background-color: variables.$white;
+    border-radius: 5px;
+
+    p {
+      color: variables.$veryDarkViolet;
+    }
+
+    .url-card__short-wrapper {
+      @include variables.flex-row;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        color: variables.$cyan;
+
+        &:hover {
+          color: lighten(variables.$cyan, 20%);
+        }
+      }
+    }
+  }
+}
