@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/angethan/url-shortener-frontend-mentor)
 - Live Site URL: [Netlify](https://shortener-angethan.netlify.app)
 
 ## My process
